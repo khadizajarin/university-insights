@@ -102,7 +102,7 @@ function Navbar() {
             </Menu>
           </Box>
 
-          <Box className="lg:hidden text-[#D8C4B6] text-xl font-bold">Study MBBS Abroad</Box>
+          <Box className="lg:hidden text-[#D8C4B6] text-xl font-bold mr-2">Study MBBS Abroad</Box>
         </Toolbar>
          
       </div>

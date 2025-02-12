@@ -1,3 +1,4 @@
+"use client"
 import DoneAllIcon from '@mui/icons-material/DoneAll';
 
 const ContactForm = () => {
@@ -23,7 +24,7 @@ const ContactForm = () => {
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full placeholder:text-[#D8C4B6]  p-4 border bg-[#3E5879] text-[#D8C4B6] rounded-lg shadow-inner focus:outline-none focus:ring-0 focus:ring-[#213555] transition"
+              className="w-full placeholder:text-[#D8C4B6] p-4 border bg-[#3E5879] text-[#D8C4B6] rounded-lg shadow-inner focus:outline-none focus:ring-0 focus:ring-[#213555] transition"
               required
             />
 
@@ -39,11 +40,24 @@ const ContactForm = () => {
           <div className="flex flex-col gap-4">
             {/* Date of Birth Input */}
             <input
-              type="date"
-              placeholder="Your Date of Birth"
-              className="w-full placeholder:text-[#D8C4B6] p-4 border bg-[#3E5879] text-[#D8C4B6] rounded-lg shadow-inner focus:outline-none focus:ring-0 focus:ring-[#213555] transition"
-              required
-            />
+  type="date"
+  placeholder="Your Date of Birth"
+  className="w-full placeholder:text-[#D8C4B6] p-4 border bg-[#3E5879] text-[#D8C4B6] rounded-lg shadow-inner focus:outline-none focus:ring-0 focus:ring-[#213555] transition custom-date"
+/>
+
+<style jsx>{`
+  input[type="date"]::-webkit-datetime-edit,
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-clear-button {
+    color: #d8c4b6; /* Match your desired text color */
+    background-color: transparent; /* Match the input background color */
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #d8c4b6; /* Adjust calendar icon color */
+  }
+`}</style>
+
+
 
             {/* Country Preference Select */}
             <select
