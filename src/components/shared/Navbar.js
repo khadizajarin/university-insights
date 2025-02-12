@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
@@ -26,7 +25,7 @@ function Navbar() {
   return (
     <AppBar position="static" className="">
       <div >
-        <Toolbar disableGutters className="flex justify-between items-center bg-[#213555]">
+        <Toolbar disableGutters className="flex justify-between items-center bg-[#213555] tracking-wide">
           {/* Desktop Menu */}
           <Box
             sx={{

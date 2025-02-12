@@ -1,5 +1,5 @@
 
-# Study MBBS Abroad Landing Page
+# Study MBBS Abroad Landing Page #
 
 This project is a responsive landing page for "Study MBBS Abroad" designed for a front-end development intern application at University Insights. The site highlights the benefits of studying MBBS abroad and includes several interactive sections such as a hero banner, a swiper carousel for benefits, a grid of top countries, an admission process section, and a responsive contact form.
 
