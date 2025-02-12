@@ -28,9 +28,16 @@ input:-webkit-autofill {
 }
 
 
-/* input:-webkit-autofill {
-  background-color: #3E5879 !important;
-  color:  !important;
-  box-shadow: 0 0 0px 1000px #3E5879 inset !important; 
-} */
+input[type="date"]::-webkit-datetime-edit {
+  color: #d8c4b6 !important; /* Matches text color */
+  background-color: transparent !important; /* Matches input background */
+}
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(80%); /* Adjust the calendar icon to match your color scheme */
+}
+
+input[type="date"] {
+  color: #d8c4b6; /* Ensures the text color for non-webkit browsers */
+  background-color: #3e5879; /* Ensures the input background matches */
+}
