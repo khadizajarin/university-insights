@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input:-webkit-autofill {
+  background-color: #3E5879 !important; /* Same as the input background */
+  color: #D8C4B6 !important; /* Autofill text color */
+  -webkit-text-fill-color: #D8C4B6 !important; /* Ensures the text color is red */
+  box-shadow: 0 0 0px 1000px #3E5879 inset !important; /* Autofill background */
+}
+
+
+/* input:-webkit-autofill {
+  background-color: #3E5879 !important;
+  color:  !important;
+  box-shadow: 0 0 0px 1000px #3E5879 inset !important; 
+} */
+

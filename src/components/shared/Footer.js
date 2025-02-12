@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-      <footer className="bg-[#213555] text-[#D8C4B6] py-4">
+      <footer className="bg-[#213555] text-[#D8C4B6]  py-4">
         <div className="max-w-6xl mx-auto px-4 text-center">
           {/* Footer Links */}
-          <div className="grid lg:grid-cols-4 grid-cols-2 justify-center lg:px-32   mb-4">
+          <div className="grid lg:grid-cols-4 grid-cols-2 justify-center lg:px-32 mb-4">
             <Link href="#why-study" className="hover:underline">
               Why Abroad    
             </Link>
