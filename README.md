@@ -5,33 +5,33 @@ This project is a responsive landing page for "Study MBBS Abroad" designed for a
 
 ## Features
 
-- **Hero Section**:  
+- Hero Section:  
   An engaging banner with a clear call-to-action ("Apply Now") featuring Material UI icons and gradient backgrounds.
 
-- **Benefits Section**:  
+- Benefits Section:  
   A dynamic Swiper carousel showcasing the benefits of studying MBBS abroad with smooth auto-swipe, looping, and responsive settings.
 
-- **Top Countries Section**:  
+- Top Countries Section:  
   A grid layout with hover effects that displays a list of top countries for MBBS studies.
 
-- **Admission Process Section**:  
+- Admission Process Section:  
   A detailed, step-by-step guide explaining the admission process and eligibility criteria with interactive card layouts.
 
-- **Contact Form**:  
+- Contact Form:  
   A fully responsive form with a two-column layout on larger screens, including fields such as Name, Email, Phone, Date of Birth, Country Preference, Preferred Intake, and a Message box.  
   Custom autofill styles have been applied to ensure consistency with the site’s color scheme.
 
-- **Responsive & SEO-Optimized**:  
+- Responsive & SEO-Optimized:  
   The design is mobile-first and adapts to various screen sizes, while the code follows semantic HTML practices to help with SEO.
 
 ## Tech Stack
 
-- **Next.js**: Framework for building the static landing page.
-- **React**: For component-based UI development.
-- **Tailwind CSS**: For rapid and customizable styling.
-- **Swiper**: For implementing the auto-swiping carousel.
-- **Material UI (MUI)**: For icons and additional UI elements.
-- **Framer Motion** (optional): For adding smooth animations.
+- Next.js: Framework for building the static landing page.
+- React: For component-based UI development.
+- Tailwind CSS: For rapid and customizable styling.
+- Swiper: For implementing the auto-swiping carousel.
+- Material UI (MUI): For icons and additional UI elements.
+- Framer Motion (optional): For adding smooth animations.
 
 ## Live Demo
 
@@ -41,29 +41,29 @@ This project is a responsive landing page for "Study MBBS Abroad" designed for a
 
 ### Prerequisites
 
-- **Node.js** (v16 or higher)
-- **npm** or **yarn**
+- Node.js (v16 or higher)
+- npm or yarn
 
 ### Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/khadizajarin/university-insights
    ```
 
-2. **Navigate into the project directory:**
+2. Navigate into the project directory:
    ```bash
    cd study-mbbs-abroad
    ```
 
-3. **Install dependencies:**
+3. Install dependencies:
    ```bash
    npm install
    # or
    yarn install
    ```
 
-4. **Run the development server:**
+4. Run the development server:
    ```bash
    npm run dev
    # or
@@ -96,28 +96,28 @@ study-mbbs-abroad/
 
 ## Customization and Configuration
 
-- **Tailwind CSS**: Customize colors, fonts, and responsive breakpoints in `tailwind.config.js` and `globals.css`.
-- **Swiper Carousel**: Modify the carousel settings (e.g., auto-swipe delay, loop, breakpoints) in `SwiperComponent.jsx`.
-- **Material UI Icons**: Replace or update icons by importing different components from MUI.
-- **SEO & Analytics**: Enhance meta tags and integrate tracking scripts in Next.js's `_document.js` or `Head` components.
+- Tailwind CSS: Customize colors, fonts, and responsive breakpoints in `tailwind.config.js` and `globals.css`.
+- Swiper Carousel: Modify the carousel settings (e.g., auto-swipe delay, loop, breakpoints) in `SwiperComponent.jsx`.
+- Material UI Icons: Replace or update icons by importing different components from MUI.
+- SEO & Analytics: Enhance meta tags and integrate tracking scripts in Next.js's `_document.js` or `Head` components.
 
 ## Deployment
 
-This project can be deployed to platforms like **Vercel** or **Netlify**. For example, with Vercel:
+This project can be deployed to platforms like Vercel or Netlify. For example, with Vercel:
 1. Push your repository to GitHub.
 2. Sign in to [Vercel](https://vercel.com/) and import your GitHub repository.
 3. Follow the prompts to deploy your project.
 
 ## Future Enhancements
 
-- **Backend Integration**: Connect the contact form to a backend API for storing leads.
-- **Additional Animations**: Enhance UI animations using Framer Motion.
-- **Accessibility Improvements**: Continue refining accessibility (ARIA roles, labels, etc.).
-- **Multilingual Support**: Consider adding translations for a global audience.
+- Backend Integration: Connect the contact form to a backend API for storing leads.
+- Additional Animations: Enhance UI animations using Framer Motion.
+- Accessibility Improvements: Continue refining accessibility (ARIA roles, labels, etc.).
+- Multilingual Support: Consider adding translations for a global audience.
 
 ## Author
 
-- **Your Name**  
+- Your Name  
   [GitHub](https://github.com/khadizajarin)  
   [LinkedIn](https://www.linkedin.com/in/khadiza-jarin-roza/)
 
