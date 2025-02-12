@@ -8,6 +8,13 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import {Merriweather_Sans  } from 'next/font/google';
+ 
+const merriweather_Sans = Merriweather_Sans({
+  subsets: ['cyrillic-ext'],
+  weight: ['300', '400', '700', '800']
+});
+
 
 const pages = ["BENEFITS", "TOP COUNTRIES", "ADMISSION PROCESS", "CONTACT"];
 
@@ -23,9 +30,9 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" className="">
+    <AppBar position="static" className={merriweather_Sans.className}>
       <div >
-        <Toolbar disableGutters className="flex justify-between items-center bg-[#213555] tracking-wide">
+        <Toolbar disableGutters className="flex justify-between items-center bg-[#213555] tracking-wide text-bold">
           {/* Desktop Menu */}
           <Box
             sx={{

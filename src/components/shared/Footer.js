@@ -1,8 +1,14 @@
 import Link from "next/link";
+import {Merriweather_Sans  } from 'next/font/google';
+ 
+const merriweather_Sans = Merriweather_Sans({
+  subsets: ['cyrillic-ext'],
+  weight: ['300', '400', '700', '800']
+});
 
 const Footer = () => {
     return (
-      <footer className="bg-[#213555] text-[#D8C4B6]  py-4">
+      <footer className={`bg-[#213555] text-[#D8C4B6] py-4 ${merriweather_Sans.className}`}>
         <div className="max-w-6xl mx-auto px-4 text-center">
           {/* Footer Links */}
           <div className="grid lg:grid-cols-4 grid-cols-2 justify-center lg:px-32 mb-4">

@@ -8,8 +8,8 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4">
-        <h1 className="text-5xl lg:text-6xl font-extrabold mb-6">
-          Study <span className="text-[#D8C4B6] border-[0.1rem] p-2 rounded-md bg-[#213555] border-[#213555]">MBBS</span> Abroad
+        <h1 className="text-5xl lg:text-6xl font-extrabold mb-6 lg:leading-0 leading-[3.5rem]">
+          Study <span className="text-[#D8C4B6] border-[0.1rem] px-2 rounded-md bg-[#213555] border-[#213555]">MBBS</span> Abroad
         </h1>
         <p className="text-lg lg:text-xl font-medium mb-8 max-w-2xl mx-auto">
           Start your journey to become a world-class doctor and achieve your dreams today!
