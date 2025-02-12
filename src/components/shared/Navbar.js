@@ -1,119 +1,111 @@
-// import Link from "next/link";
-
-// const Navbar = () => {
-//   return (
-//     <nav className="bg-blue-600 text-white py-4 shadow-lg">
-//       <div className="max-w-6xl mx-auto px-4 flex flex-col justify-between items-center">
-//         {/* Logo */}
-//         <Link href="/">
-//           <p className="text-2xl font-bold">Study MBBS Abroad</p>
-//         </Link>
-//         <div className="hidden lg:flex lg:flex-col space-x-6">
-//           <Link href="/#why-study">
-//             <p className="hover:text-gray-200">Why Study MBBS</p>
-//           </Link>
-//           <Link href="/#countries">
-//             <p className="hover:text-gray-200">Top Countries</p>
-//           </Link>
-//           <Link href="/admissionprocess">
-//             <p className="hover:text-gray-200">Admission Process</p>
-//           </Link>
-//           <Link href="/#contact">
-//             <p className="hover:text-gray-200">Contact Us</p>
-//           </Link>
-//         </div>
-
-//         {/* Mobile Menu Button */}
-//         <div className="md:hidden">
-//           <button
-//             id="menu-button"
-//             className="text-white focus:outline-none focus:ring-2 focus:ring-white"
-//           >
-//             <svg
-//               className="w-6 h-6"
-//               xmlns="http://www.w3.org/2000/svg"
-//               fill="none"
-//               viewBox="0 0 24 24"
-//               stroke="currentColor"
-//             >
-//               <path
-//                 strokeLinecap="round"
-//                 strokeLinejoin="round"
-//                 strokeWidth={2}
-//                 d="M4 6h16M4 12h16m-7 6h7"
-//               />
-//             </svg>
-//           </button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
 "use client";
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+import React, { useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import MenuIcon from "@mui/icons-material/Menu";
 
-
-const pages = [
-  'HOURS & LOCATION',
-  'MENU',
-  'RESTAURANT',
-  'WINE-BAR',
-  'PRIVATE-DINING',
-  'GALLERY',
-];
+const pages = ["BENEFITS", "TOP COUNTRIES", "ADMISSION PROCESS", "CONTACT"];
 
 function Navbar() {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <AppBar position="static" className="bg-[#0B1519] h-[4.8175rem] flex justify-center items-center">
-      <Container maxWidth="" className="flex justify-center items-center">
-        <Toolbar disableGutters>
+    <AppBar position="static" className="">
+      <div >
+        <Toolbar disableGutters className="flex justify-between items-center bg-[#213555]">
+          {/* Desktop Menu */}
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexDirection: { xs: 'row', md: 'row' }, // Stack buttons vertically on mobile
-              flexWrap: 'wrap'
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             {pages.map((page, index) => (
               <Button
                 key={page}
                 sx={{
-                  color: '#BCA263',
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '0.25rem 1.5rem',
-                  height: 'auto',
-                  lineHeight: '1rem',
-                  fontSize: { xs: '1rem', md: '1.375rem' }, 
-                  borderRight: {
-                    md: index !== pages.length - 1 ? '3.5px solid' : 'none',
-                  },
+                  color: "#D8C4B6",
+                  padding: "0.25rem 1.5rem",
+                  fontSize: "1.375rem",
+                  borderRight: index !== pages.length - 1 ? "3.5px solid #D8C4B6" : "none",
                   borderRadius: 0,
-                //   fontFamily: ubuntu.style.fontFamily,
                 }}
-                className="text-[#BCA263] tracking-widest"
-                style={{ fontWeight: '500' }}
+                className="tracking-widest"
+                style={{ fontWeight: "500" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
+
+          {/* Mobile Menu */}
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="menu"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              sx={{ color: "#D8C4B6" }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Button
+                    sx={{
+                      color: "#0B1519",
+                      padding: "0.5rem 1rem",
+                      textAlign: "center",
+                      width: "100%",
+                    }}
+                    className="tracking-widest text-[#0B1519]"
+                  >
+                    {page}
+                  </Button>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+
+          <Box className="lg:hidden text-[#D8C4B6] text-xl font-bold">Study MBBS Abroad</Box>
         </Toolbar>
-      </Container>
+         
+      </div>
     </AppBar>
   );
 }

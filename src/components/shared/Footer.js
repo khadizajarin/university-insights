@@ -1,21 +1,23 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
-      <footer className="bg-blue-600 text-white py-8">
+      <footer className="bg-[#213555] text-[#D8C4B6] py-4">
         <div className="max-w-6xl mx-auto px-4 text-center">
           {/* Footer Links */}
-          <div className="flex flex-wrap justify-center space-x-6 mb-4">
-            <a href="#why-study" className="hover:underline">
-              Why Study MBBS
-            </a>
-            <a href="#countries" className="hover:underline">
+          <div className="grid lg:grid-cols-4 grid-cols-2 justify-center lg:px-32   mb-4">
+            <Link href="#why-study" className="hover:underline">
+              Why Abroad    
+            </Link>
+            <Link href="#countries" className="hover:underline">
               Top Countries
-            </a>
-            <a href="/admissionprocess" className="hover:underline">
+            </Link>
+            <Link href="#admissionprocess" className="hover:underline">
               Admission Process
-            </a>
-            <a href="#contact" className="hover:underline">
+            </Link>
+            <Link href="#contact" className="hover:underline">
               Contact Us
-            </a>
+            </Link>
           </div>
   
           {/* Copyright */}
