@@ -45,13 +45,13 @@ const AdmissionProcess = () => {
     ];
   
     return (
-      <div className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
+      <div className="py-16 bg-[#3E5879]">
+        <div className=" mx-auto px-4">
           {/* Header */}
-          <h1 className="text-4xl font-bold text-center mb-12">Admission Process</h1>
+          <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#D8C4B6] border-2 border-[#D8C4B6] lg:mx-[40rem] mx-[2rem] rounded-md lg:p-4 p-2 ">Admission Process</h2>
   
           {/* Steps Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 max-w-7xl mx-auto">
             {steps.map((step) => (
               <div
                 key={step.number}
