@@ -7,9 +7,12 @@ const TopCountries = () => {
   ];
   return (
     <div className="py-16 bg-gradient-to-r from-[#F5EFE7] to-[#D8C4B6]">
-      <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#3E5879] border-2 border-[#3E5879] lg:mx-[40rem] mx-[2rem] rounded-md lg:p-4 p-2 relative">
+      <div className='flex justify-center items-center'>
+        <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#3E5879] border-2 border-[#3E5879] rounded-md px-10 py-2 relative">
         Top Countries
-      </h2>
+        </h2>
+      </div>
+      
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
         {countries.map((country, index) => (
           <div

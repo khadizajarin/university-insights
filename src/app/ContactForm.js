@@ -3,9 +3,11 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 const ContactForm = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-[#F5EFE7] to-[#D8C4B6]">
-      <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#3E5879] border-2 border-[#3E5879] lg:mx-[40rem] mx-[2rem] rounded-md lg:p-4 p-2 relative">
+      <div className='flex justify-center items-center'>
+        <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#3E5879] border-2 border-[#3E5879] rounded-md px-10 py-2 relative">
         Contact
-      </h2>
+        </h2>
+      </div>
       <form className="max-w-4xl lg:mx-auto bg-[#F5EFE7] lg:p-8 p-2 shadow-lg rounded-lg space-y-6 mx-4">
         {/* Grid Container for Two Columns */}
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
@@ -79,9 +81,9 @@ const ContactForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-[#F5EFE7] border-[#213555] border-2 text-[#213555] font-semibold px-6 py-3 rounded-md hover:bg-opacity-60 hover:scale-1.5 focus:ring-0 focus:ring-[#213555] focus:outline-none"
+          className="w-full bg-[#F5EFE7] border-[#213555] border-2 text-[#213555] hover:text-[#F5EFE7] hover:bg-[#213555] font-semibold px-6 py-3 rounded-md focus:ring-0 focus:ring-[#213555] focus:outline-none transition-all duration-300 transform hover:scale-105"
         >
-          <div className='flex flex-row justify-center items-center gap-2'>
+          <div className='flex flex-row justify-center items-center gap-2 '>
           Submit <DoneAllIcon></DoneAllIcon>
           </div>
         </button>

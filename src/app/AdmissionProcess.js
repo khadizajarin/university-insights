@@ -1,7 +1,5 @@
 
 
-import { motion } from "framer-motion";
-
 import PublishIcon from '@mui/icons-material/Publish';
 
 const AdmissionProcess = () => {
@@ -54,9 +52,11 @@ const AdmissionProcess = () => {
     <div className="py-16 bg-gradient-to-r from-[#3E5879] to-[#2C3D4F]">
       <div className=" mx-auto px-4">
         {/* Header */}
-        <h2 className="lg:text-4xl text-2xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#D8C4B6] border-2 border-[#D8C4B6] lg:mx-[40rem] mx-[2rem] rounded-md lg:p-4 p-2 shadow-lg">
+        <div className='flex justify-center items-center'>
+          <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#D8C4B6] border-2 border-[#D8C4B6] rounded-md px-10 py-2 inline-block mx-auto">
           Admission Process
-        </h2>
+          </h2>
+        </div>
 
         {/* Steps Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:max-w-7xl lg:mx-auto">
@@ -78,9 +78,11 @@ const AdmissionProcess = () => {
 
         {/* Eligibility Criteria Section */}
         <div>
-          <h2 className="lg:text-4xl text-2xl font-bold text-center lg:mb-16 mb-10 text-[#D8C4B6] border-2 border-[#D8C4B6] lg:mx-[40rem] mx-[2rem] rounded-md lg:p-4 p-2 shadow-lg">
+          <div className='flex justify-center items-center'>
+            <h2 className="lg:text-3xl text-xl font-bold text-center lg:mb-16 mb-10 lg:mt-10 text-[#D8C4B6] border-2 border-[#D8C4B6] rounded-md px-10 py-2 inline-block mx-auto">
             Eligibility Criteria
-          </h2>
+            </h2>
+          </div>
           <ul className="list-disc list-inside bg-[#F5EFE7] rounded-lg shadow-lg p-8 space-y-4 max-w-7xl mx-auto">
             {eligibilityCriteria.map((criteria, index) => (
               <li
