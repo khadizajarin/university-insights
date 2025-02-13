@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import Image from 'next/image';
 
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
@@ -120,10 +121,13 @@ const SwiperComponent = () => {
           key={index}
           className="rounded-lg overflow-hidden shadow-lg bg-[#F5EFE7] flex flex-col justify-center items-center text-center p-4"
         >
-          <img
+          <Image
             src={card.image}
             alt={card.title}
             className="object-cover w-full h-48 mb-4 rounded-lg"
+            width={500}
+            height={300}
+            priority
           />
           <p className="text-lg font-medium text-[#213555]">{card.title}</p>
         </SwiperSlide>

@@ -61,7 +61,7 @@ const AdmissionProcess = () => {
         {/* Steps Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:max-w-7xl lg:mx-auto">
           {steps.map((step) => (
-            <div
+            <div key={step.number}
             className="bg-[#F5EFE7] rounded-lg shadow-lg p-6 text-center transition-transform transform hover:scale-105"
           >
             <div className="text-2xl font-bold text-[#3E5879] mb-4">
