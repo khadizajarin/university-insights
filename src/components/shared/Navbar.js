@@ -91,15 +91,16 @@ function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} className="bg-[#F5EFE7]">
                   <Button
                     sx={{
                       color: "#0B1519",
                       padding: "0.5rem 1rem",
                       textAlign: "center",
                       width: "100%",
+                      backgroundColor:"#D8C4B6",
                     }}
-                    className="tracking-widest text-[#0B1519]"
+                    className="tracking-widest  text-[#213555]"
                   >
                     {page}
                   </Button>

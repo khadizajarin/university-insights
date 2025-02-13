@@ -102,9 +102,9 @@ const SwiperComponent = () => {
       }}
       coverflowEffect={{
         rotate: 0,
-        stretch: 0,
+        stretch: 20,
         depth: 100,
-        modifier: 1,
+        modifier: 2,
         slideShadows: true,
       }}
       breakpoints={{
